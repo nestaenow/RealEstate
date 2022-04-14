@@ -2,10 +2,15 @@ import React from 'react'
 
 export const LandView = () => {
   return (
-      <div className="container bg-scroll mx-4" style={{backgroundImage: "url('https://i.ibb.co/Zg90BM2/Estately.png')",}}>
-          <p className='text-darker font-bold text-2xl'>
-              Find your next <span className='text-primary'>perfect</span> place with ease
-          </p>
+      <div>
+        <div>
+            <div className='z-0'>
+                <img src='./images/Estately.png'alt="" srcset="" className='rounded-md' height={400} width={'100%'}/>
+            </div>
+            <div className='text-darker font-bold text-5xl z-10'>
+                Find your next <span className='text-primary'>perfect</span> place with ease
+            </div>
+        </div>
       </div>
   )
 }
