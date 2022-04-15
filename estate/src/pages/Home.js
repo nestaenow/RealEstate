@@ -5,6 +5,7 @@ import { Navbar } from '../components/Navbar'
 import { Options } from '../components/Options'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShieldHalved, faPaperPlane, faLock, faFileInvoiceDollar } from '@fortawesome/free-solid-svg-icons'
+import { FeaturedProp } from '../components/FeaturedProp'
 
 export const Home = () => {
     const [options, ] = useState([
@@ -18,13 +19,13 @@ export const Home = () => {
         <Navbar/>
         <LandView/>
         <Options options={options}/>
-        <div className='flex items-center justify-center my-24'>
+        <div className='flex flex-col items-center justify-center my-24'>
             <div className='flex flex-col items-center justify-center my-5'>
                 <h1 className='text-darker font-bold text-4xl mb-5'>Discover Our Featured Properties</h1>
                 <h2 className='text-gray-400 text-lg font-medium'>Discover best deals for your future house</h2>
             </div>
             <div>
-                
+                <FeaturedProp/>
             </div>
             <div></div>
         </div>
