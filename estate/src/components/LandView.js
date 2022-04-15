@@ -5,11 +5,11 @@ import { faSackDollar, faHouse } from '@fortawesome/free-solid-svg-icons'
 export const LandView = () => {
   return (
       <div>
-        <div className=''>
+        <div className='relative'>
             <div>
                 <img src='./images/Estately.png' alt="" srcset="" className='rounded-xl' height={400} width={'100%'}/>
             </div>
-            <div className='absolute bottom-44 ml-20'>
+            <div className='absolute bottom-5 ml-20'>
                 <h1 className='text-darker font-bold text-6xl mb-5'>
                     Find your next <span className='text-primary'>perfect</span><br/> place with ease
                 </h1>
