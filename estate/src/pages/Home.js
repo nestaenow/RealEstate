@@ -4,10 +4,9 @@ import { LandView } from '../components/LandView'
 import { Navbar } from '../components/Navbar'
 import { Options } from '../components/Options'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShieldHalved, faPaperPlane, faLock, faFileInvoiceDollar, } from '@fortawesome/free-solid-svg-icons'
-import { faCircle } from '@fortawesome/free-regular-svg-icons'
-import { BsCircleFill, BsFillRecordCircleFill } from "react-icons/bs";
+import { faShieldHalved, faPaperPlane, faLock, faFileInvoiceDollar, faClock, faSuitcase, } from '@fortawesome/free-solid-svg-icons'
 import { FeaturedProp } from '../components/FeaturedProp'
+import { Carousel } from '../components/Carousel'
 
 export const Home = () => {
     const [options, ] = useState([
@@ -35,12 +34,17 @@ export const Home = () => {
                 <h2 className='text-gray-400 text-base font-medium'>Discover best deals for your future house</h2>
             </div>
             <FeaturedProp properties={properties}/>
-            <div className='flex flex-row justify-center items-center text-primary my-12'>
-                <p className='mx-2 text-xs'><BsCircleFill/></p>
-                <p className='mx-2 text-xs'><BsCircleFill/></p>
-                <p className='mx-2 text-md'><FontAwesomeIcon icon={faCircle}/></p>
-                <p className='mx-2 text-xs'><BsCircleFill/></p>
-                <p className='mx-2 text-xs'><BsCircleFill/></p>
+            <Carousel/>
+        </div>
+        <div>
+            <div></div>
+            <div>
+                <div></div>
+                <div>
+                    <p><FontAwesomeIcon icon={faClock} /></p>
+                    <div className='text-white'><p>24 H Consultant</p></div>
+                    <p><FontAwesomeIcon icon={faSuitcase} /></p>
+                </div>
             </div>
         </div>
     </div>

@@ -16,7 +16,7 @@ export const FeaturedProp = ({ properties }) => {
                 <div className='text-white bg-darker  px-4 py-1 text-xs rounded absolute top-3 right-3 z-10'>FOR SALE</div>
 
                 <div class="absolute w-12 h-12 bottom-44 right-3">
-                    <img class="rounded-full shadow-sm" src={ property.owner } alt="Owner's picture" />
+                    <img class="rounded-full shadow-sm" src={ property.owner } alt="Owner" />
                 </div>
 
                 <div className='px-3 py-5'>
