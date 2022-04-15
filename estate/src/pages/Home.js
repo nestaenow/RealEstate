@@ -14,6 +14,11 @@ export const Home = () => {
         {title: '100% Safe Transactions', description: 'Your transactions will always be kept safe and confidential no matter what', icon: <FontAwesomeIcon icon={faLock}/>},
         {title: 'Low Cost on Taxes', description: 'Buying or renting a house through our company you get discounts on taxes', icon: <FontAwesomeIcon icon={faFileInvoiceDollar}/>}
     ])
+
+    const [properties, ] = useState([
+        {propertyImage: "./images/1.jpg", propAlt: "living room with kitchen in the background", owner: "./images/p3.jpg", propName: "Lilys' Apartment", propLocation: '120 m<sup>2</sup> Chavchavadze Ave. 21', numBeds: 3, }
+    ])
+
   return (
     <div className='mx-8 mb-8'>
         <Navbar/>

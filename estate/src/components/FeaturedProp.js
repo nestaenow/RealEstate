@@ -1,36 +1,56 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBed } from '@fortawesome/free-solid-svg-icons'
+import { faBath, faBed, faSignal, faWarehouse, faHeart } from '@fortawesome/free-solid-svg-icons'
 
-export const FeaturedProp = () => {
+export const FeaturedProp = ({ properties }) => {
   return (
-    <div className='relative box-content w-72 h-80 rounded-lg'>
+    <div className='relative box-content w-72 h-fit rounded-lg border border-gray-400'>
         <div className='z-0 m-0 w-fit'>
-            <img className='rounded-t-lg' src="./images/1.jpg" alt="living room with kitchen in the background" srcset=""/>
+            <img className='rounded-t-lg' src={ properties.propertyImage } alt={ properties.propAlt } srcset=""/>
         </div>
+
         <div className='text-white bg-primary px-4 py-1 text-xs rounded absolute top-3 left-3 z-10'>FEATURED</div>
+
         <div className='text-white bg-darker  px-4 py-1 text-xs rounded absolute top-3 right-3 z-10'>FOR SALE</div>
-        <img className='rounded-full border-4 border-white absolute w-10 h-10 bottom-28 right-3 z-10' src="./images/p3.jpg" alt="white girl with black hair" srcset=""/>
-        <div className='px-3 pt-4'>
-            <h1 className='text-dark text-sm font-bold'>Lilys' Apartment</h1>
-            <h2 className='text-gray-400 text-xs'>120 m<sup>2</sup> Chavchavadze Ave. 21</h2>
+
+        <div class="absolute w-12 h-12 bottom-44 right-3">
+            <img class="rounded-full shadow-sm" src={ properties.owner } alt="Owner's picture" />
         </div>
-        <div className='flex flex-row text-gray-400'>
-            <div>
-                <FontAwesomeIcon icon={faBed}/>
-                <p>3 Beds</p>
+
+        <div className='px-3 py-5'>
+            <h1 className='text-dark text-sm font-bold mb-3'>{ properties.propName }</h1>
+            <h2 className='text-gray-400 text-xs font-medium'>{ properties.propLocation }</h2>
+        </div>
+
+        <div className='flex flex-row px-3 pb-5 border-gray-400 border-b justify-between text-gray-400'>
+            <div className='flex flex-col items-center justify-center text-lg font-medium'>
+                <FontAwesomeIcon icon={ faBed }/>
+                <p className='pt-1 text-xs'>{ properties.numBeds } Beds</p>
             </div>
-            <div>
-                <FontAwesomeIcon icon={faBed}/>
-                <p>2 Baths</p>
+
+            <div className='flex flex-col items-center justify-center text-lg font-medium'>
+                <FontAwesomeIcon icon={ faBath }/>
+                <p className='pt-1 text-xs'>2 Baths</p>
             </div>
-            <div>
-                <FontAwesomeIcon icon={faBed}/>
-                <p>1 Garage</p>
+
+            <div className='flex flex-col items-center justify-center text-lg font-medium'>
+                <FontAwesomeIcon icon={ faWarehouse}/>
+                <p className='pt-1 text-xs'>1 Garage</p>
             </div>
-            <div>
-                <FontAwesomeIcon icon={faBed}/>
-                <p>12th floor</p>
+
+            <div className='flex flex-col items-center justify-center text-lg font-medium'>
+                <FontAwesomeIcon icon={ faSignal }/>
+                <p className='pt-1 text-xs'>12th floor</p>
+            </div>
+        </div>
+
+        <div className='flex flex-row justify-between px-3 py-3 items-center'>
+            <div className='font-bold text-sm text-dark'>
+                $100,000
+            </div>
+
+            <div className='text-light'>
+                <FontAwesomeIcon icon={ faHeart }/>
             </div>
         </div>
     </div>
