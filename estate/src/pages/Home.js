@@ -4,7 +4,9 @@ import { LandView } from '../components/LandView'
 import { Navbar } from '../components/Navbar'
 import { Options } from '../components/Options'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShieldHalved, faPaperPlane, faLock, faFileInvoiceDollar } from '@fortawesome/free-solid-svg-icons'
+import { faShieldHalved, faPaperPlane, faLock, faFileInvoiceDollar, } from '@fortawesome/free-solid-svg-icons'
+import { faCircle } from '@fortawesome/free-regular-svg-icons'
+import { BsCircleFill, BsFillRecordCircleFill } from "react-icons/bs";
 import { FeaturedProp } from '../components/FeaturedProp'
 
 export const Home = () => {
@@ -16,7 +18,10 @@ export const Home = () => {
     ])
 
     const [properties, ] = useState([
-        {propertyImage: "./images/1.jpg", propAlt: "living room with kitchen in the background", owner: "./images/p3.jpg", propName: "Lilys' Apartment", propLocation: '120 m<sup>2</sup> Chavchavadze Ave. 21', numBeds: 3, }
+        {propertyImage: './images/2.jpg', propAlt: "living room with large window", owner: './images/p3.jpg', propName: "Lilys' Apartment", perimeter: 120, propLocation: 'Chavchavadze Ave. 21', numBeds: 3, numBaths: 2, numGarage: 1, numFloor: 12, price: '$100,000'},
+        {propertyImage: './images/4.jpg', propAlt: "perfectly lit white living room", owner: './images/p5.jpg', propName: "Your Lux House", perimeter: 160, propLocation: 'Chavchavadze Ave. 71', numBeds: 4, numBaths: 4, numGarage: 1, numFloor: 19, price: '$180,000'},
+        {propertyImage: './images/1.jpg', propAlt: "living room with kitchen in the background", owner: './images/p2.jpg', propName: "Apartment At The Heart Of The City", perimeter: 90, propLocation: 'Rustaveli Ave. 2', numBeds: 1, numBaths: 1, numGarage: 1, numFloor: 2, price: '$70,000'},
+        {propertyImage: './images/3.jpg', propAlt: "living room with kitchen in the background", owner: './images/p4.jpg', propName: "Lilys' Apartment", perimeter: 90, propLocation: 'Chavchavadze Ave. 21', numBeds: 1, numBaths: 1, numGarage: 1, numFloor: 2, price: '$70,000'},
     ])
 
   return (
@@ -24,15 +29,19 @@ export const Home = () => {
         <Navbar/>
         <LandView/>
         <Options options={options}/>
-        <div className='flex flex-col items-center justify-center my-24'>
-            <div className='flex flex-col items-center justify-center my-5'>
+        <div className='flex flex-col my-24'>
+            <div className='flex flex-col items-center justify-center mb-20'>
                 <h1 className='text-darker font-bold text-4xl mb-5'>Discover Our Featured Properties</h1>
-                <h2 className='text-gray-400 text-lg font-medium'>Discover best deals for your future house</h2>
+                <h2 className='text-gray-400 text-base font-medium'>Discover best deals for your future house</h2>
             </div>
-            <div>
-                <FeaturedProp/>
+            <FeaturedProp properties={properties}/>
+            <div className='flex flex-row justify-center items-center text-primary my-12'>
+                <p className='mx-2 text-xs'><BsCircleFill/></p>
+                <p className='mx-2 text-xs'><BsCircleFill/></p>
+                <p className='mx-2 text-md'><FontAwesomeIcon icon={faCircle}/></p>
+                <p className='mx-2 text-xs'><BsCircleFill/></p>
+                <p className='mx-2 text-xs'><BsCircleFill/></p>
             </div>
-            <div></div>
         </div>
     </div>
   )

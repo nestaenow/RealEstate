@@ -32,7 +32,7 @@ export const LandView = () => {
             </div>
         </div>
         <div className='relative  flex flex-col mx-20 bottom-32'>
-            <div className='flex flex-row bg-light box-content w-fit rounded-t-xl'>
+            <div className='flex flex-row bg-light box-content w-fit rounded-t-xl cursor-pointer'>
                 <div className='px-16 py-4 font-semibold text-base text-gray-500 rounded-t-xl bg-white'>Rent</div>
                 <div className='px-16 py-4 font-semibold text-base text-gray-500'>Buy</div>
                 <div className='px-16 py-4 font-semibold text-base text-gray-500'>Co-Living</div>

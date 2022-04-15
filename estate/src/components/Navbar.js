@@ -7,7 +7,7 @@ export const Navbar = () => {
     <div className='py-5 flex flex-row justify-between content-center text-lg'>
       <div className='flex flex-row items-center text-darker font-bold text-2xl'>
         <div><FontAwesomeIcon icon={faBuilding} /></div>
-        <div className='pl-1'>Estately</div>
+        <div className='pl-2'>Estately</div>
       </div>
       <div>
         <a href="/" className='px-5 text-gray-400 font-normal'>Home</a>
