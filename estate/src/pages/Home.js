@@ -42,16 +42,21 @@ export const Home = () => {
             <FeaturedProp properties={properties}/>
             <Carousel/>
         </div>
-        <div className='my-20 flex flex-row items-center'>
-            <div className='drop-shadow-2xl'>
-                <div className=''>
+        <div className='my-40 flex flex-row items-center justify-center static'>
+            <div className='w-9/12 flex relative mb-96 '>
+                
+                <div className='drop-shadow-3xl w-6/12 absolute right-60 top-0 z-0'>
+                    <img src="./images/f3.png" alt="building" srcset="" />
+                </div>
+                {/* <div className='drop-shadow-3xl w-6/12 absolute left-32 top-20 z-10'>
+                    <img src="./images/f4.png" alt="building" srcset="" />
+                </div> */}
+                <div className='drop-shadow-3xl w-6/12 absolute right-0 top-20 z-20'>
                     <img src="./images/f2.png" alt="building" srcset="" />
                 </div>
-                <div>
-
-                </div>
+            
             </div>
-            <div className='box-content w-96 h-fit p-5'>
+            <div className='box-content w-96 h-fit p-5 ml-20'>
                 <div>
                     <h2 className='text-primary text-lg font-normal'><span className='text-dark font-bold'>About</span> Our Company</h2>
                     <h1 className='text-darker text-2xl font-bold my-6'>We are Offering the Best Real Estate Deals</h1>
