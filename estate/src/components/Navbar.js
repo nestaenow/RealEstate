@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBuilding } from '@fortawesome/free-regular-svg-icons'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 export const Navbar = () => {
     let Links = [
@@ -21,9 +20,6 @@ export const Navbar = () => {
         {/* faBuilding */}
         <div className='pl-2'>Estately</div>
       </div>
-      {/* <div onClick={() => setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
-        <FontAwesomeIcon icon={ open ? 'close':'faBars'} />
-      </div> */}
       <ul className={'flex items-center tablet:text-sm laptop:text-base'}>
         {Links.map((link) => (
             <li key={ link.link } className='tablet:mx-3 laptop:mx-5 text-gray-400'>
