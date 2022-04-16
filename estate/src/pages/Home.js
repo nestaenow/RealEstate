@@ -42,8 +42,15 @@ export const Home = () => {
             <FeaturedProp properties={properties}/>
             <Carousel/>
         </div>
-        <div className='my-20'>
-            <div></div>
+        <div className='my-20 flex flex-row items-center'>
+            <div className='drop-shadow-2xl'>
+                <div className=''>
+                    <img src="./images/f2.png" alt="building" srcset="" />
+                </div>
+                <div>
+
+                </div>
+            </div>
             <div className='box-content w-96 h-fit p-5'>
                 <div>
                     <h2 className='text-primary text-lg font-normal'><span className='text-dark font-bold'>About</span> Our Company</h2>
@@ -58,6 +65,9 @@ export const Home = () => {
             </div>
         </div>
         <Rating ratings={ratings}/>
+        <div>
+            <img src="./images/f1.png" alt="Pixel light-blue world mad" srcset="" />
+        </div>
     </div>
   )
 }
