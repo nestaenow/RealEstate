@@ -10,10 +10,10 @@ export const LandView = () => {
                 <img src='./images/Estately.png' alt="" srcset="" className='rounded-xl' height={400} width={'100%'}/>
             </div>
             <div className='absolute bottom-5 ml-20'>
-                <h1 className='text-darker font-bold text-6xl mb-5'>
+                <h1 className='text-darker font-bold text-xl tablet:text-4xl laptop:text-6xl  mb-5'>
                     Find your next <span className='text-primary'>perfect</span><br/> place with ease
                 </h1>
-                <div className='text-gray-400 text-base mb-14'>
+                <div className='text-gray-400 tablet:text-xs laptop:text-base mb-14'>
                     Estately will help you find your home fast, easy and comfortable. <br/>
                     Our expert support are always available. Let's Start now!
                 </div>
