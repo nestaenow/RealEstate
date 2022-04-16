@@ -4,9 +4,10 @@ import { LandView } from '../components/LandView'
 import { Navbar } from '../components/Navbar'
 import { Options } from '../components/Options'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShieldHalved, faPaperPlane, faLock, faFileInvoiceDollar, faClock, faSuitcase, } from '@fortawesome/free-solid-svg-icons'
+import { faShieldHalved, faPaperPlane, faLock, faFileInvoiceDollar, faClock, faSuitcase, faCalendarCheck, } from '@fortawesome/free-solid-svg-icons'
 import { FeaturedProp } from '../components/FeaturedProp'
 import { Carousel } from '../components/Carousel'
+import { Rating } from '../components/Rating'
 
 export const Home = () => {
     const [options, ] = useState([
@@ -23,6 +24,11 @@ export const Home = () => {
         {propertyImage: './images/3.jpg', propAlt: "living room with kitchen in the background", owner: './images/p4.jpg', propName: "Lilys' Apartment", perimeter: 90, propLocation: 'Chavchavadze Ave. 21', numBeds: 1, numBaths: 1, numGarage: 1, numFloor: 2, price: '$70,000'},
     ])
 
+    const [ratings, ] = useState([
+        {description: "Having to get services like buying a house just by visiting a website and booking an appointment wasn't quite a thing for me. But, now Estately change my point of view concerning Real Estates.", author: 'Arthuro Guevara', position: 'Client'},
+        {description: 'I always have hard times working with real estate agencies, but with estately whole process was easy, smooth and quick! Agent Lucas is professional at what he does so its very comfortable working with him', author: 'Manuel Ramirez', position: 'Investor'}
+    ])
+
   return (
     <div className='mx-8 mb-8'>
         <Navbar/>
@@ -36,17 +42,22 @@ export const Home = () => {
             <FeaturedProp properties={properties}/>
             <Carousel/>
         </div>
-        <div>
+        <div className='my-20'>
             <div></div>
-            <div>
-                <div></div>
+            <div className='box-content w-96 h-fit p-5'>
                 <div>
-                    <p><FontAwesomeIcon icon={faClock} /></p>
-                    <div className='text-white'><p>24 H Consultant</p></div>
-                    <p><FontAwesomeIcon icon={faSuitcase} /></p>
+                    <h2 className='text-primary text-lg font-normal'><span className='text-dark font-bold'>About</span> Our Company</h2>
+                    <h1 className='text-darker text-2xl font-bold my-6'>We are Offering the Best Real Estate Deals</h1>
+                    <p className='text-gray-400 text-sm my-2'>We have already sold more than 7,000 Houses and we are Still going at very good pace</p>
+                </div>
+                <div className='text-white flex flex-row text-xl justify-between my-10 box-content w-72'>
+                    <p className='bg-primary py-3 px-4 rounded-lg cursor-pointer'><FontAwesomeIcon icon={faCalendarCheck} /></p>
+                    <div className='bg-primary py-3 px-4 rounded-lg flex flex-row items-center cursor-pointer'><FontAwesomeIcon icon={faClock} /><p className='ml-2 text-sm'>24 H Consultant</p></div>
+                    <p className='bg-primary py-3 px-4 rounded-lg cursor-pointer'><FontAwesomeIcon icon={faSuitcase} /></p>
                 </div>
             </div>
         </div>
+        <Rating ratings={ratings}/>
     </div>
   )
 }
