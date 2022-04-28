@@ -48,9 +48,6 @@ export const Home = () => {
                 <div className='drop-shadow-3xl w-6/12 absolute right-60 top-0 z-0'>
                     <img src="./images/f3.png" alt="building" srcset="" />
                 </div>
-                {/* <div className='drop-shadow-3xl w-6/12 absolute left-32 top-20 z-10'>
-                    <img src="./images/f4.png" alt="building" srcset="" />
-                </div> */}
                 <div className='drop-shadow-3xl w-6/12 absolute right-0 top-20 z-20'>
                     <img src="./images/f2.png" alt="building" srcset="" />
                 </div>
