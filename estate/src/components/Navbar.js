@@ -17,7 +17,6 @@ export const Navbar = () => {
     <div className='py-5 flex flex-row justify-between content-center text-lg'>
       <div className='flex flex-row items-center text-darker font-bold tablet:text-xl laptop:text-2xl'>
         <div><FontAwesomeIcon icon={faBuilding} /></div>
-        {/* faBuilding */}
         <div className='pl-2'>Estately</div>
       </div>
       <ul className={'flex items-center tablet:text-sm laptop:text-base'}>
