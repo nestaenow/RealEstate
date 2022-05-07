@@ -12,7 +12,6 @@ export const Rating = ({ratings}) => {
                 <div className='text-6xl mr-6 text-gray-300'>
                     <FontAwesomeIcon icon={faQuoteLeft}/>
                 </div>
-                //
                 <div className='text-gray-400 font-medium my-5 mr-8'>
                     <p className='mb-2'>{rating.description}</p>
                     <div className='flex flex-row items-center mb-1'>

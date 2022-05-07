@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBuilding } from '@fortawesome/free-regular-svg-icons'
 
@@ -10,8 +10,6 @@ export const Navbar = () => {
       {name: 'Blog', link: ''},
       {name: 'Login/Sign Up', link: ''}
     ]
-
-    const [open, setOpen] = useState(false)
 
   return (
     <div className='py-5 flex flex-row justify-between content-center text-lg'>
