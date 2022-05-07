@@ -21,7 +21,7 @@ export const Home = () => {
         {propertyImage: './images/2.jpg', propAlt: "living room with large window", owner: './images/p3.jpg', propName: "Lilys' Apartment", perimeter: 120, propLocation: 'Chavchavadze Ave. 21', numBeds: 3, numBaths: 2, numGarage: 1, numFloor: 12, price: '$100,000'},
         {propertyImage: './images/4.jpg', propAlt: "perfectly lit white living room", owner: './images/p5.jpg', propName: "Your Lux House", perimeter: 160, propLocation: 'Chavchavadze Ave. 71', numBeds: 4, numBaths: 4, numGarage: 1, numFloor: 19, price: '$180,000'},
         {propertyImage: './images/1.jpg', propAlt: "living room with kitchen in the background", owner: './images/p2.jpg', propName: "Apartment At The Heart Of The City", perimeter: 90, propLocation: 'Rustaveli Ave. 2', numBeds: 1, numBaths: 1, numGarage: 1, numFloor: 2, price: '$70,000'},
-        {propertyImage: './images/3.jpg', propAlt: "living room with kitchen in the background", owner: './images/p4.jpg', propName: "Lilys' Apartment", perimeter: 90, propLocation: 'Chavchavadze Ave. 21', numBeds: 1, numBaths: 1, numGarage: 1, numFloor: 2, price: '$70,000'},
+        {propertyImage: './images/3.jpg', propAlt: "living room with kitchen in the background", owner: './images/p4.jpg', propName: "Jay's Apartment", perimeter: 90, propLocation: 'Rustaveli Ave. 2', numBeds: 1, numBaths: 1, numGarage: 1, numFloor: 2, price: '$70,000'},
     ])
 
     const [ratings, ] = useState([
