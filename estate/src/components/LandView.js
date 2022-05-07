@@ -10,15 +10,15 @@ export const LandView = () => {
                 <img src='./images/Estately.png' alt="" srcset="" className='rounded-xl' height={400} width={'100%'}/>
             </div>
             <div className='absolute bottom-5 ml-20'>
-                <h1 className='text-darker font-bold text-xl tablet:text-4xl laptop:text-6xl  mb-5'>
+                <h1 className='text-darker font-bold text-xl tablet:text-4xl laptop:text-6xl  mb-3'>
                     Find your next <span className='text-primary'>perfect</span><br/> place with ease
                 </h1>
-                <div className='text-gray-400 tablet:text-xs laptop:text-base mb-14'>
+                <div className='text-gray-400 text-sm mb-8'>
                     Estately will help you find your home fast, easy and comfortable. <br/>
                     Our expert support are always available. Let's Start now!
                 </div>
-                <div className='text-primary text-xl mb-36'>
-                    <div className=' mb-2'>
+                <div className='text-primary text-xl mb-32'>
+                    <div className=' mb-1'>
                         <FontAwesomeIcon icon={faSackDollar} />
                         <span className='text-dark font-bold text-sm mx-2'>$20,5M</span>
                         <span className='text-gray-400 text-xs'>Earned throught property transactions</span>
@@ -31,7 +31,7 @@ export const LandView = () => {
                 </div>
             </div>
         </div>
-        <div className='relative  flex flex-col mx-20 bottom-32'>
+        <div className='relative  flex flex-col mx-20 bottom-28'>
             <div className='flex flex-row bg-light box-content w-fit rounded-t-xl cursor-pointer'>
                 <div className='px-16 py-4 font-semibold text-base text-gray-500 rounded-t-xl bg-white'>Rent</div>
                 <div className='px-16 py-4 font-semibold text-base text-gray-500'>Buy</div>
