@@ -18,10 +18,10 @@ export const Home = () => {
     ])
 
     const [properties, ] = useState([
-        {propertyImage: './images/2.jpg', propAlt: "living room with large window", owner: './images/p3.jpg', propName: "Lilys' Apartment", perimeter: 120, propLocation: 'Chavchavadze Ave. 21', numBeds: 3, numBaths: 2, numGarage: 1, numFloor: 12, price: '$100,000'},
-        {propertyImage: './images/4.jpg', propAlt: "perfectly lit white living room", owner: './images/p5.jpg', propName: "Your Lux House", perimeter: 160, propLocation: 'Chavchavadze Ave. 71', numBeds: 4, numBaths: 4, numGarage: 1, numFloor: 19, price: '$180,000'},
-        {propertyImage: './images/1.jpg', propAlt: "living room with kitchen in the background", owner: './images/p2.jpg', propName: "Apartment At The Heart Of The City", perimeter: 90, propLocation: 'Rustaveli Ave. 2', numBeds: 1, numBaths: 1, numGarage: 1, numFloor: 2, price: '$70,000'},
-        {propertyImage: './images/3.jpg', propAlt: "living room with kitchen in the background", owner: './images/p4.jpg', propName: "Jay's Apartment", perimeter: 90, propLocation: 'Rustaveli Ave. 2', numBeds: 1, numBaths: 1, numGarage: 1, numFloor: 2, price: '$70,000'},
+        {propertyImage: require('../images/2.jpg'), propAlt: "living room with large window", owner: require('../images/p3.jpg'), propName: "Lilys' Apartment", perimeter: 120, propLocation: 'Chavchavadze Ave. 21', numBeds: 3, numBaths: 2, numGarage: 1, numFloor: 12, price: '$100,000'},
+        {propertyImage: require('../images/4.jpg'), propAlt: "perfectly lit white living room", owner: require('../images/p5.jpg'), propName: "Your Lux House", perimeter: 160, propLocation: 'Chavchavadze Ave. 71', numBeds: 4, numBaths: 4, numGarage: 1, numFloor: 19, price: '$180,000'},
+        {propertyImage: require('../images/1.jpg'), propAlt: "living room with kitchen in the background", owner: require('../images/p2.jpg'), propName: "Apartment At The Heart Of The City", perimeter: 90, propLocation: 'Rustaveli Ave. 2', numBeds: 1, numBaths: 1, numGarage: 1, numFloor: 2, price: '$70,000'},
+        {propertyImage: require('../images/3.jpg'), propAlt: "living room with kitchen in the background", owner: require('../images/p4.jpg'), propName: "Jay's Apartment", perimeter: 90, propLocation: 'Rustaveli Ave. 2', numBeds: 1, numBaths: 1, numGarage: 1, numFloor: 2, price: '$70,000'},
     ])
 
     const [ratings, ] = useState([
@@ -46,10 +46,10 @@ export const Home = () => {
             <div className='w-9/12 flex relative mb-96 '>
                 
                 <div className='drop-shadow-3xl w-6/12 absolute right-60 top-0 z-0'>
-                    <img src="./images/f3.png" alt="building" srcset="" />
+                    <img src={require('../images/f3.png')} alt="building" srcset="" />
                 </div>
                 <div className='drop-shadow-3xl w-6/12 absolute right-0 top-20 z-20'>
-                    <img src="./images/f2.png" alt="building" srcset="" />
+                    <img src={require('../images/f2.png')} alt="building" srcset="" />
                 </div>
             
             </div>
@@ -68,7 +68,7 @@ export const Home = () => {
         </div>
         <Rating ratings={ratings}/>
         <div>
-            <img src="./images/f1.png" alt="Pixel light-blue world mad" srcset="" />
+            <img src={require('../images/f1.png')} alt="Pixel light-blue world mad" srcset="" />
         </div>
     </div>
   )
