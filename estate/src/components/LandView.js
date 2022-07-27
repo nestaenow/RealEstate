@@ -7,7 +7,7 @@ export const LandView = () => {
       <div>
         <div className='relative'>
             <div>
-                <img src='./images/Estately.png' alt="" srcset="" className='rounded-xl' height={400} width={'100%'}/>
+                <img src={require('../images/Estately.png')} alt="" srcset="" className='rounded-xl' height={400} width={'100%'}/>
             </div>
             <div className='absolute bottom-5 ml-20'>
                 <h1 className='text-darker font-bold text-xl tablet:text-4xl laptop:text-6xl  mb-3'>
