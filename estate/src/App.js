@@ -1,4 +1,3 @@
-import firebase from 'firebase';
 import './App.css';
 import { Home } from './pages/Home';
 
