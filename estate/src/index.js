@@ -5,24 +5,24 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const firebaseConfig = {
+  apiKey: "AIzaSyCiHw5Y5wztmi0yIWRAI3iVS_H7Z6cdZ8A",
+  authDomain: "estate-320ca.firebaseapp.com",
+  projectId: "estate-320ca",
+  storageBucket: "estate-320ca.appspot.com",
+  messagingSenderId: "633337682631",
+  appId: "1:633337682631:web:771d19ea3df3d5928bfce2",
+  measurementId: "G-FHK4R68KLG"
+};
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
 );
-
-const firebaseConfig = {
-  apiKey: "AIzaSyATtxcTjqvPB9ajGs-4aDQS7VbJQsNS-dw",
-  authDomain: "estately-f9d5b.firebaseapp.com",
-  projectId: "estately-f9d5b",
-  storageBucket: "estately-f9d5b.appspot.com",
-  messagingSenderId: "301897472325",
-  appId: "1:301897472325:web:b759d54d2a7c941571462c",
-  measurementId: "G-GQWG1FNG56"
-};
-
-const app = initializeApp(firebaseConfig);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
